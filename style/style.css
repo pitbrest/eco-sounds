@@ -119,6 +119,12 @@ body {
 		right: 0;	
 		transition: right 1s ease-in-out;		
 	}	
+	.nav-item:hover {
+		font-weight: bold;
+	}
+	.nav-item:hover {
+		color: #ffb123;
+	}
 }
 @media (max-width: 480px) {
 	.nav-list {		

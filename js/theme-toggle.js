@@ -1,4 +1,5 @@
 const menu = document.querySelector('.nav-list')
+const burgerButton = document.querySelector('.burger')
 const themeButtons = document.querySelectorAll('.nav-item')
 const mainSection = document.querySelector('.main')
 const audioPlayer = document.querySelector('.audio-player')
@@ -15,6 +16,7 @@ themeButtons.forEach(button => {
 		themeButtons.forEach(item => item.classList.remove('active'))
 		button.classList.add('active')
 		menu.classList.remove('active')
+		burgerButton.classList.toggle('active')
 
 		let buttonTargetValue = (button.getAttribute('target'))
 
