@@ -42,20 +42,12 @@ themeButtons.forEach(button => {
 })
 
 
-audioPlayerPauseButton.addEventListener('click', (event) => {
-
-	audioPlayerPlayButton.classList.remove('active')
-	audioPlayerPauseButton.classList.add('active')		
-	audio.pause()
-})
 
 audioPlayerPlayButton.addEventListener('click', (event) => {
 	
 	if (audioPlayerPauseButton.classList.contains('active')) {
 		audioPlayerPauseButton.classList.remove('active')
-		audioPlayerPlayButton.classList.toggle('active')	
-		audio.currentTime			
-		audio.src = audioPlayer.getAttribute('src')
+		audioPlayerPlayButton.classList.toggle('active')		
 		audio.play()
 	}
 	else if (!audioPlayerPauseButton.classList.contains('active')) {
@@ -65,7 +57,11 @@ audioPlayerPlayButton.addEventListener('click', (event) => {
 	}
 })
 
-
+audioPlayerPauseButton.addEventListener('click', (event) => {
+	audioPlayerPlayButton.classList.remove('active')
+	audioPlayerPauseButton.classList.add('active')		
+	audio.pause()
+})
 
 
 
