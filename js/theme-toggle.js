@@ -1,3 +1,4 @@
+const menu = document.querySelector('.nav-list')
 const themeButtons = document.querySelectorAll('.nav-item')
 const mainSection = document.querySelector('.main')
 const audioPlayer = document.querySelector('.audio-player')
@@ -13,6 +14,7 @@ themeButtons.forEach(button => {
 
 		themeButtons.forEach(item => item.classList.remove('active'))
 		button.classList.add('active')
+		menu.classList.remove('active')
 
 		let buttonTargetValue = (button.getAttribute('target'))
 
@@ -43,15 +45,17 @@ themeButtons.forEach(button => {
 
 
 
+
+
 audioPlayerPlayButton.addEventListener('click', (event) => {
-	
+
 	if (audioPlayerPauseButton.classList.contains('active')) {
 		audioPlayerPauseButton.classList.remove('active')
-		audioPlayerPlayButton.classList.add('active')		
+		audioPlayerPlayButton.classList.add('active')
 		audio.play()
 	}
 	else if (!audioPlayerPauseButton.classList.contains('active')) {
-		audioPlayerPlayButton.classList.add('active')	
+		audioPlayerPlayButton.classList.add('active')
 		audio.currentTime = 0
 		audio.src = audioPlayer.getAttribute('src')
 		audio.play()
@@ -60,11 +64,11 @@ audioPlayerPlayButton.addEventListener('click', (event) => {
 
 audioPlayerPauseButton.addEventListener('click', (event) => {
 	audioPlayerPlayButton.classList.remove('active')
-	audioPlayerPauseButton.classList.add('active')		
+	audioPlayerPauseButton.classList.add('active')
 	audio.pause()
 })
 
-if(confirm('Вас зовут Ирина Александровна ?')) {
+if (confirm('Вас зовут Ирина Александровна ?')) {
 	alert('Мама, тебе это должно понравиться )')
 }
 
