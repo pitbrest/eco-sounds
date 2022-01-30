@@ -47,10 +47,11 @@ audioPlayerPlayButton.addEventListener('click', (event) => {
 	
 	if (audioPlayerPauseButton.classList.contains('active')) {
 		audioPlayerPauseButton.classList.remove('active')
-		audioPlayerPlayButton.classList.toggle('active')		
+		audioPlayerPlayButton.classList.add('active')		
 		audio.play()
 	}
 	else if (!audioPlayerPauseButton.classList.contains('active')) {
+		audioPlayerPlayButton.classList.add('active')	
 		audio.currentTime = 0
 		audio.src = audioPlayer.getAttribute('src')
 		audio.play()
