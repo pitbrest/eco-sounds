@@ -63,7 +63,9 @@ audioPlayerPauseButton.addEventListener('click', (event) => {
 	audio.pause()
 })
 
-
+if(confirm('Вас зовут Ирина Александровна ?')) {
+	alert('Мама, тебе это должно понравиться )')
+}
 
 
 
