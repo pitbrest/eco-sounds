@@ -24,30 +24,59 @@ themeButtons.forEach(button => {
 			mainSection.setAttribute('class', `main ${buttonTargetValue}`)
 			audioPlayer.setAttribute('src', `assets/audio/${buttonTargetValue}.mp3`)
 			audioPlayerDownloadButton.setAttribute('href', `assets/audio/${buttonTargetValue}.mp3`)
+			if (audioPlayerPlayButton.classList.contains('active')) {
+				audioPlayerPauseButton.classList.remove('active')
+				audio.currentTime = 0
+				audio.src = audioPlayer.getAttribute('src')
+				audio.play()
+			}
 		}
 		if (buttonTargetValue == 'drozd' && button.classList.contains('active')) {
 			mainSection.setAttribute('class', `main ${buttonTargetValue}`)
 			audioPlayer.setAttribute('src', `assets/audio/${buttonTargetValue}.mp3`)
 			audioPlayerDownloadButton.setAttribute('href', `assets/audio/${buttonTargetValue}.mp3`)
+			if (audioPlayerPlayButton.classList.contains('active')) {
+				audioPlayerPauseButton.classList.remove('active')
+				audio.currentTime = 0
+				audio.src = audioPlayer.getAttribute('src')
+				audio.play()
+			}
 		}
 		if (buttonTargetValue == 'zarynka' && button.classList.contains('active')) {
 			mainSection.setAttribute('class', `main ${buttonTargetValue}`)
+			audioPlayer.setAttribute('src', `assets/audio/${buttonTargetValue}.mp3`)
 			audioPlayerDownloadButton.setAttribute('href', `assets/audio/${buttonTargetValue}.mp3`)
+			if (audioPlayerPlayButton.classList.contains('active')) {
+				audioPlayerPauseButton.classList.remove('active')
+				audio.currentTime = 0
+				audio.src = audioPlayer.getAttribute('src')
+				audio.play()
+			}
 		}
 		if (buttonTargetValue == 'javoronok' && button.classList.contains('active')) {
 			mainSection.setAttribute('class', `main ${buttonTargetValue}`)
+			audioPlayer.setAttribute('src', `assets/audio/${buttonTargetValue}.mp3`)
 			audioPlayerDownloadButton.setAttribute('href', `assets/audio/${buttonTargetValue}.mp3`)
+			if (audioPlayerPlayButton.classList.contains('active')) {
+				audioPlayerPauseButton.classList.remove('active')
+				audio.currentTime = 0
+				audio.src = audioPlayer.getAttribute('src')
+				audio.play()
+			}
 		}
 		if (buttonTargetValue == 'slavka' && button.classList.contains('active')) {
 			mainSection.setAttribute('class', `main ${buttonTargetValue}`)
+			audioPlayer.setAttribute('src', `assets/audio/${buttonTargetValue}.mp3`)
 			audioPlayerDownloadButton.setAttribute('href', `assets/audio/${buttonTargetValue}.mp3`)
+			if (audioPlayerPlayButton.classList.contains('active')) {
+				audioPlayerPauseButton.classList.remove('active')
+				audio.currentTime = 0
+				audio.src = audioPlayer.getAttribute('src')
+				audio.play()
+			}
 		}
 	})
 })
-
-
-
-
 
 audioPlayerPlayButton.addEventListener('click', (event) => {
 
@@ -69,40 +98,3 @@ audioPlayerPauseButton.addEventListener('click', (event) => {
 	audioPlayerPauseButton.classList.add('active')
 	audio.pause()
 })
-
-if (confirm('Вас зовут Ирина Александровна ?')) {
-	alert('Мама, тебе это должно понравиться )')
-}
-
-
-
-/*
-let isPlaying = false
-let audioPausedTime = 0
-
-
-audioPlayerToggleButton.addEventListener('click', (event) => {
-
-
-	if (!isPlaying) {
-		audio.src = audioPlayer.getAttribute('src')				
-		audioPausedTime = audio.currentTime
-		audio.play()
-		isPlaying = true		
-	}
-	else if (isPlaying) {
-		audio.src = audioPlayer.getAttribute('src')			
-		isPlaying = 'paused'
-		audio.pause()
-		
-	}
-	else if (isPlaying == 'paused') {
-		audio.src = audioPlayer.getAttribute('src')
-		audio.currentTime	= audioPausedTime	
-		audio.play()
-		isPlaying = true
-	}
-})
-
-*/
-

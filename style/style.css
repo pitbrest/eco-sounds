@@ -103,7 +103,7 @@ body {
 		position: fixed;			
 		top: 50px;
 		right:-480px;				
-		background-color: rgb(209 193 148 / 58%);			
+		background-color: rgb(231 200 108 / 50%);		
 		height: 50vw;
 		min-height: 310px;
 		width: 30vw;
@@ -117,13 +117,17 @@ body {
 	}
 	.nav-list.active {				
 		right: 0;	
-		transition: right 1s ease-in-out;		
+		transition: right 1s ease-in-out;			
 	}	
-	.nav-item:hover {
+	.nav-item.active {
+		color: #dbdbdb;
+	}
+	.nav-item {
 		font-weight: bold;
+		color: #000000;
 	}
 	.nav-item:hover {
-		color: #ffb123;
+		color: #eb9a03;
 	}
 }
 @media (max-width: 480px) {
