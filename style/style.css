@@ -1,11 +1,8 @@
 body {
-	font-family: 'Roboto', sans-serif;
 	font-size: calc(16px + 4 * ((100vw - 320px) / (1880 - 320)));
 	color: #fff;
-	background-color: #ddb751;
-	max-height: 100%;		
-	font-family: 'Montserrat', sans-serif;
-	letter-spacing: 1.2;
+	background-color: #ffce6e;
+	font-family: 'Roboto', sans-serif;
 }
 .container {
 	width: calc(100% - 40px);
@@ -13,7 +10,7 @@ body {
 	margin: 0 auto;
 }
 @media (max-width: 768px) {
-	.container {		
+	.container {
 		width: 100%;
 	}
 }
@@ -27,7 +24,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 5px 20px;	
+	padding: 5px 20px;
 }
 .logo img {
 	width: 50px;
@@ -42,16 +39,19 @@ body {
 	padding: 0 20px;
 	transition: 0.3s;
 }
+.nav-item a {
+	letter-spacing: 1.2px;
+}
 .nav-item:hover {
-	color: #bdae82;
+	color: #8f6e06;
 }
 .nav-item.active {
-	color: #bf9f43;
+	color: #a0a0a0;
 }
 .nav-list li:last-child {
 	padding: 0 0 0 20px;
 }
-.logo:hover img {	
+.logo:hover img {
 	filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 .burger {
@@ -62,17 +62,18 @@ body {
 	width: 40px;
 	height: 2px;
 	background-color: #fff;
-	position: relative;		
+	position: relative;
 }
-.burger-menu::before, .burger-menu::after {
-	content: '';
+.burger-menu::before,
+.burger-menu::after {
+	content: "";
 	position: absolute;
 	width: 40px;
 	height: 2px;
-	background-color: #fff;	
+	background-color: #fff;
 }
-.burger.active .burger-menu {	
-	background-color: rgba(255, 255, 255, 0);	
+.burger.active .burger-menu {
+	background-color: rgba(255, 255, 255, 0);
 }
 .burger-menu::before {
 	top: -10px;
@@ -94,33 +95,34 @@ body {
 }
 
 @media (max-width: 768px) {
-	.header {	
-		padding: 0 20px;	
+	.header {
+		padding: 0 20px;
 	}
 	.burger {
 		display: block;
 	}
 	.nav-list {
 		display: block;
-		position: fixed;			
+		position: fixed;
 		top: 50px;
-		right:-480px;				
-		background-color: rgb(231 200 108 / 50%);		
+		right: -480px;
+		background-color: rgb(231 200 108 / 50%);
 		height: 50vw;
 		min-height: 310px;
 		width: 30vw;
 		min-width: 250px;
-		padding: 20px 10px 20px 30px;		
-		border-bottom-left-radius: 30px;	
-		transition: right 1.3s ease-in-out;			
+		padding: 20px 10px 20px 30px;
+		border-bottom-left-radius: 30px;
+		transition: right 1.3s ease-in-out;
 	}
-	.nav-item, .nav-list li:last-child {
-		padding: 20px 20px;		
+	.nav-item,
+	.nav-list li:last-child {
+		padding: 20px 20px;
 	}
-	.nav-list.active {				
-		right: 0;	
-		transition: right 1s ease-in-out;			
-	}	
+	.nav-list.active {
+		right: 0;
+		transition: right 1s ease-in-out;
+	}
 	.nav-item.active {
 		color: #dbdbdb;
 	}
@@ -133,15 +135,15 @@ body {
 	}
 }
 @media (max-width: 480px) {
-	.nav-list {		
+	.nav-list {
 		min-width: 100%;
-		right:-480px;
-		transition: right 0.7s ease-in-out;		
+		right: -480px;
+		transition: right 0.7s ease-in-out;
 	}
-	.nav-list.active {	
-		right: 0;			
-		width: 100%;		
-		transition: right 0.7s ease-in-out;	
+	.nav-list.active {
+		right: 0;
+		width: 100%;
+		transition: right 0.7s ease-in-out;
 	}
 }
 
@@ -151,63 +153,63 @@ body {
 
 .main {
 	height: calc(100vh - 120px);
-   min-height: 280px;
+	min-height: 280px;
 	display: flex;
 	justify-content: center;
-	align-items: center;	
+	align-items: center;
 	background-size: cover;
 	color: #fff0;
 	background: url(../assets/img/forest.jpg) no-repeat center;
 }
 .main.solovey {
 	height: calc(100vh - 120px);
-   min-height: 280px;
+	min-height: 280px;
 	display: flex;
 	justify-content: center;
-	align-items: center;	
+	align-items: center;
 	background-size: cover;
 	color: #fff0;
 	background: url(../assets/img/solovey.jpg) no-repeat center;
 }
 .main.drozd {
 	height: calc(100vh - 120px);
-   min-height: 280px;
+	min-height: 280px;
 	display: flex;
 	justify-content: center;
-	align-items: center;	
+	align-items: center;
 	background-size: cover;
-	color: #fff0;	
-	background: url(../assets/img/drozd.jpg) no-repeat center;	
+	color: #fff0;
+	background: url(../assets/img/drozd.jpg) no-repeat center;
 }
 .main.zarynka {
 	height: calc(100vh - 120px);
-   min-height: 280px;
+	min-height: 280px;
 	display: flex;
 	justify-content: center;
-	align-items: center;	
-	background-size: cover;
-	color: #fff0;	
-	background: url(../assets/img/zarynka.jpg) no-repeat center;	
-}
-.main.javoronok {	
-	height: calc(100vh - 120px);
-   min-height: 280px;
-	display: flex;
-	justify-content: center;
-	align-items: center;	
+	align-items: center;
 	background-size: cover;
 	color: #fff0;
-	background: url(../assets/img/javoronok.jpg) no-repeat center;	
+	background: url(../assets/img/zarynka.jpg) no-repeat center;
 }
-.main.slavka {	
+.main.javoronok {
 	height: calc(100vh - 120px);
-   min-height: 280px;
+	min-height: 280px;
 	display: flex;
 	justify-content: center;
-	align-items: center;	
+	align-items: center;
 	background-size: cover;
 	color: #fff0;
-	background: url(../assets/img/slavka.jpg) no-repeat center;	
+	background: url(../assets/img/javoronok.jpg) no-repeat center;
+}
+.main.slavka {
+	height: calc(100vh - 120px);
+	min-height: 280px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	color: #fff0;
+	background: url(../assets/img/slavka.jpg) no-repeat center;
 }
 .audio-player {
 	display: none;
@@ -235,7 +237,8 @@ body {
 .footer-left span:nth-child(3) {
 	padding: 0 20px 0 0;
 }
-.footer-middle a:hover, .footer-left a:hover {
+.footer-middle a:hover,
+.footer-left a:hover {
 	color: #bdae82;
 	transition: ease-in-out 0.3s;
 }
@@ -248,18 +251,19 @@ body {
 	margin: 0 15px;
 }
 .media-buttons__item:not(:last-child) img {
-	filter: brightness(500%);	
+	filter: brightness(500%);
 }
-.media-buttons__item img {	
+.media-buttons__item img {
 	transition: ease-in-out 0.3s;
 }
 .media-buttons__item:hover img {
-	filter: none; 	
+	filter: none;
 }
 .media-buttons__item:last-child:hover .download-button {
 	filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
-.media-buttons__item.play.active img, .media-buttons__item.pause.active img{
+.media-buttons__item.play.active img,
+.media-buttons__item.pause.active img {
 	filter: invert(33%) sepia(42%) saturate(260%) hue-rotate(-21deg) brightness(123%) contrast(235%);
 }
 @media (max-width: 768px) {
@@ -276,7 +280,7 @@ body {
 @media (max-width: 480px) {
 	.footer {
 		justify-content: space-between;
-		margin: 0 auto;	
+		margin: 0 auto;
 		padding: 45px 20px 10px 20px;
 		position: relative;
 	}
