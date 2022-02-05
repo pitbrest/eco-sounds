@@ -3,6 +3,8 @@ body {
 	color: #fff;
 	background-color: #ffce6e;
 	font-family: 'Roboto', sans-serif;
+	max-height: 100vh;
+	height: 100vh;
 }
 .container {
 	width: calc(100% - 40px);
@@ -152,7 +154,7 @@ body {
 /********************/
 
 .main {
-	height: calc(100vh - 120px);
+	height: calc(100vh - 135px);
 	min-height: 280px;
 	display: flex;
 	justify-content: center;
@@ -215,9 +217,33 @@ body {
 	display: none;
 }
 @media (max-width: 768px) {
+	.main {
+		height: calc(100vh - 106px);		
+	}
 	.main img {
 		width: 80px;
 		height: 80px;
+	}
+}
+@media (max-width: 480px) {
+	.main {
+		height: calc(100vh - 125px);
+		background-position: -532px -200px;		
+	}
+	.main.solovey {
+		background-position: -400px -310px;
+	}
+	.main.drozd {
+		background-position: -460px -200px;
+	}
+	.main.zarynka {
+		background-position: -670px -275px;
+	}
+	.main.javoronok {
+		background-position: -140px -424px;
+	}
+	.main.slavka {
+		background-position: -1250px -547px;
 	}
 }
 
@@ -229,7 +255,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 15px 20px;
+	padding: 10px 20px;
 }
 .footer-left span:nth-child(2) {
 	padding: 0 20px;
@@ -276,6 +302,10 @@ body {
 	.footer-left span:nth-child(3) {
 		padding: 0 10px 0 0;
 	}
+	.rss-logo {
+		width: 96px;
+		height: 36px;
+	}
 }
 @media (max-width: 480px) {
 	.footer {
@@ -299,5 +329,9 @@ body {
 	}
 	.media-buttons__item {
 		padding: 0 5px;
+	}
+	img.rss-logo {
+		width:70px;
+		height: 20px;
 	}
 }
