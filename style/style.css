@@ -164,7 +164,7 @@ body {
 	background: url(../assets/img/forest.jpg) no-repeat center;
 }
 .main.solovey {
-	height: calc(100vh - 120px);
+	height: calc(100vh - 135px);
 	min-height: 280px;
 	display: flex;
 	justify-content: center;
@@ -174,7 +174,7 @@ body {
 	background: url(../assets/img/solovey.jpg) no-repeat center;
 }
 .main.drozd {
-	height: calc(100vh - 120px);
+	height: calc(100vh - 135px);
 	min-height: 280px;
 	display: flex;
 	justify-content: center;
@@ -184,7 +184,7 @@ body {
 	background: url(../assets/img/drozd.jpg) no-repeat center;
 }
 .main.zarynka {
-	height: calc(100vh - 120px);
+	height: calc(100vh - 135px);
 	min-height: 280px;
 	display: flex;
 	justify-content: center;
@@ -194,7 +194,7 @@ body {
 	background: url(../assets/img/zarynka.jpg) no-repeat center;
 }
 .main.javoronok {
-	height: calc(100vh - 120px);
+	height: calc(100vh - 135px);
 	min-height: 280px;
 	display: flex;
 	justify-content: center;
@@ -204,7 +204,7 @@ body {
 	background: url(../assets/img/javoronok.jpg) no-repeat center;
 }
 .main.slavka {
-	height: calc(100vh - 120px);
+	height: calc(100vh - 135px);
 	min-height: 280px;
 	display: flex;
 	justify-content: center;
